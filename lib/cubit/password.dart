@@ -10,6 +10,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:presentationapp/cubit/AppCubit.dart';
 import 'dart:io';
 import 'package:page_transition/page_transition.dart';
+import 'package:presentationapp/scaffold.dart';
 import 'package:slider_button/slider_button.dart';
 
 import '../container.dart';
@@ -64,7 +65,7 @@ class Pass_Screen extends StatelessWidget
                 onCompleted: (String value) async {
                   if(value.toString()=="8976")
                   {
-                    Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.rightToLeft, child: Containert(),));
+                    Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.rightToLeft, child: Scaffoldt(),));
 
                   }
                   else
