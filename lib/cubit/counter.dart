@@ -73,7 +73,7 @@ class countert extends StatelessWidget {
                         SizedBox(width: 15,),
                         InkWell(
                           onTap: () {
-                            if(cubit.counter>100) {
+                            if(cubit.counter<100) {
                               cubit.counter++;
                               cubit.emitState();
                             }
