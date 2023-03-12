@@ -12,6 +12,7 @@ class AppCubit extends Cubit<AppStates> {
   Color pickerColor = Color(0xff443a49);
   Color pickerColorS = Color(0xff443a49);
   bool appBarS=true;
+  int counter=0;
   double contsize=120;
   bool background=true;
   var text=TextEditingController();

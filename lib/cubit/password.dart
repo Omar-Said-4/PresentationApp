@@ -14,6 +14,7 @@ import 'package:presentationapp/scaffold.dart';
 import 'package:slider_button/slider_button.dart';
 
 import '../container.dart';
+import 'counter.dart';
 
 
 class Pass_Screen extends StatelessWidget
@@ -65,7 +66,7 @@ class Pass_Screen extends StatelessWidget
                 onCompleted: (String value) async {
                   if(value.toString()=="8976")
                   {
-                    Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.rightToLeft, child: Scaffoldt(),));
+                    Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.rightToLeft, child: countert(),));
 
                   }
                   else

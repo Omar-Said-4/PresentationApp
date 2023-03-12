@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           builder: (context, states) {
             return MaterialApp(
               debugShowCheckedModeBanner: false,
-              title: 'Let us enhoy flutter',
+              title: 'Let us enjoy flutter',
               theme: ThemeData(
                 // This is the theme of your application.
                 //
