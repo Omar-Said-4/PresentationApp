@@ -15,6 +15,10 @@ class AppCubit extends Cubit<AppStates> {
   int counter=0;
   double contsize=120;
   bool background=true;
+  MainAxisAlignment rowtt=MainAxisAlignment.start;
+  MainAxisAlignment colt=MainAxisAlignment.start;
+  int listcount=0;
+  int listcount2=0;
   var text=TextEditingController();
   void changeColor(Color color)
   {
