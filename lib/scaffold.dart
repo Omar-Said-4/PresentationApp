@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:presentationapp/cubit/AppCubit.dart';
 import 'package:presentationapp/cubit/AppStates.dart';
-import 'package:presentationapp/shared.dart';
-import 'package:slider_button/slider_button.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:url_launcher/url_launcher.dart';
 
