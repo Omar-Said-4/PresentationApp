@@ -45,8 +45,11 @@ class Pass_Screen extends StatelessWidget
 
           Align(
             alignment: Alignment.topCenter,
-            child: Text('Please, enter the password to enjoy the app',style:
-            GoogleFonts.aladin(fontSize: 25,color: Colors.black),),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('Please, enter the password to enjoy the app',style:
+              GoogleFonts.aladin(fontSize: 25,color: Colors.black),),
+            ),
           ),
           SizedBox(height: 100,),
           Container(
@@ -57,7 +60,7 @@ class Pass_Screen extends StatelessWidget
                 textStyle: TextStyle(fontSize: 20.0, color: Colors.white),
                 keyboardType: TextInputType.number,
                 underlineColor: Colors.white, // If this is null it will use primaryColor: Colors.red from Theme
-                length: 4,
+                length: 5,
                 cursorColor: Colors.blue[900], // If this is null it will default to the ambient
                 // clearAll is NOT required, you can delete it
                 // takes any widget, so you can implement your design
@@ -69,7 +72,7 @@ class Pass_Screen extends StatelessWidget
                   ),
                 ),
                 onCompleted: (String value) async {
-                  if(value.toString()=="8976")
+                  if(value.toString()=="47903")
                   {
                     Navigator.pushReplacement(context, PageTransition(
                       type: PageTransitionType.rightToLeft,
