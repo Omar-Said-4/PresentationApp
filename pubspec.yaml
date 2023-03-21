@@ -1,4 +1,4 @@
-name: presentationapp
+name: flutterbook
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -68,6 +68,7 @@ dev_dependencies:
   json_path: 0.3.1
   auto_size_text: 3.0.0
   page_transition: 2.0.9
+  appinio_swiper: ^2.0.0
   email_validator: ^2.0.1
   lottie: ^2.0.0
   vibration: ^1.7.3

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutterbook/cubit/counter.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
-import 'package:presentationapp/constants/images.dart';
+import 'package:flutterbook/constants/images.dart';
 import '../../controller/HomeController.dart';
 import '../../widget/myList.dart';
+import 'package:get/instance_manager.dart';
+
 import '../../widget/my_chart.dart';
+import 'package:page_transition/page_transition.dart';
 
 class HomeScreen extends GetView<HomeController> {
   @override
@@ -46,10 +51,16 @@ class HomeScreen extends GetView<HomeController> {
                               elevation: 0,
                               leading: IconButton(
                                 icon: Icon(
-                                  Icons.menu,
+                                  Icons.exit_to_app,
                                   color: Colors.white,
                                 ),
-                                onPressed: () {},
+                                onPressed: () {
+                                  SystemNavigator.pop();
+                                  /*Navigator.pushReplacement(context, PageTransition(
+                                    type: PageTransitionType.leftToRight,
+                                    child:    countert(),
+                                  ),*/
+                                },
                               ),
                             ),
                           ),
@@ -315,6 +326,7 @@ class HomeScreen extends GetView<HomeController> {
                       ],
                     ),
                   ),
+
                 ],
               ),
             ),

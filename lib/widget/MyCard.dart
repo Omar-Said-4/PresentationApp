@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
-import 'package:presentationapp/controller/HomeController.dart';
+import 'package:flutterbook/controller/HomeController.dart';
 
 import '../constants/images.dart';
 

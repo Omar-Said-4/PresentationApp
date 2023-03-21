@@ -1,14 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterbook/listt.dart';
+import 'package:flutterbook/widget/navi.dart';
+import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:presentationapp/cubit/AppCubit.dart';
-import 'package:presentationapp/cubit/AppStates.dart';
-import 'package:presentationapp/shared.dart';
+import 'package:flutterbook/cubit/AppCubit.dart';
+import 'package:flutterbook/cubit/AppStates.dart';
+import 'package:flutterbook/shared.dart';
 import 'package:slider_button/slider_button.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../pages/home/home_screen.dart';
 
 
 
@@ -89,6 +94,60 @@ class countert extends StatelessWidget {
                                 borderRadius: BorderRadius.all(Radius.circular(20))
                             ),
                             child:Center(child: Text("+",style: TextStyle(fontSize: 35,color: Colors.blue[900],fontWeight: FontWeight.bold),)),),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 50,),
+                  Container(
+                    width: double.infinity,
+                    height: 50,
+                    color: Colors.white,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        InkWell(
+                          onTap: ()
+                          {
+                            Navigator.pushReplacement(context, PageTransition(
+                              type: PageTransitionType.leftToRight,
+                              child:   Listt(),
+                            ),
+                            );
+                          },
+                          child: Container(
+                            child: Center(
+                              child: Text('Prev',style: TextStyle(
+                                  fontSize: 35,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 50,
+                          width: 10,
+                          color: Colors.blue[900],
+                        ),
+                        InkWell(
+                          onTap: ()
+                          {
+                            Navigator.pushReplacement(context, PageTransition(
+                              type: PageTransitionType.rightToLeft,
+                              child:  WeatherApp(),
+                            ),
+                            );
+                          },
+                          child: Container(
+                            child: Center(
+                              child: Text('Next',style: TextStyle(
+                                  fontSize: 35,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                            ),
+                          ),
                         ),
                       ],
                     ),

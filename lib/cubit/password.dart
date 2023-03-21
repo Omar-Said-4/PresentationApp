@@ -3,18 +3,19 @@
 
 
 import 'package:flutter_verification_code/flutter_verification_code.dart';
+import 'package:appinio_swiper/appinio_swiper.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
-import 'package:presentationapp/cubit/AppCubit.dart';
+import 'package:flutterbook/cubit/AppCubit.dart';
 import 'dart:io';
 import 'package:page_transition/page_transition.dart';
-import 'package:presentationapp/pages/home/home_screen.dart';
-import 'package:presentationapp/rowt.dart';
-import 'package:presentationapp/scaffold.dart';
-import 'package:presentationapp/widget/navi.dart';
+import 'package:flutterbook/pages/home/home_screen.dart';
+import 'package:flutterbook/rowt.dart';
+import 'package:flutterbook/scaffold.dart';
+import 'package:flutterbook/widget/navi.dart';
 import 'package:slider_button/slider_button.dart';
 
 import '../container.dart';
@@ -76,17 +77,9 @@ class Pass_Screen extends StatelessWidget
                   {
                     Navigator.pushReplacement(context, PageTransition(
                       type: PageTransitionType.rightToLeft,
-                      child:LiquidSwipe(
-                      pages: [
-                        Scaffoldt(),
-                        Containert(),
-                        Rowt(),
-                        Listt(),
-                        countert(),
-                        WeatherApp(),
-                      ],
-
-                    ),));
+                      child:Scaffoldt(),
+                    ),
+                    );
 
                   }
                   else

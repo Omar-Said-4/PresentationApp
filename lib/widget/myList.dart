@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:presentationapp/controller/HomeController.dart';
+import 'package:flutterbook/controller/HomeController.dart';
 
 import '../constants/images.dart';
 import '../model/current_weather_data.dart';

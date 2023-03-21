@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:presentationapp/cubit/AppCubit.dart';
-import 'package:presentationapp/cubit/AppStates.dart';
+import 'package:flutterbook/cubit/AppCubit.dart';
+import 'package:flutterbook/cubit/AppStates.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:page_transition/page_transition.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'container.dart';
 
 
 
@@ -148,12 +151,44 @@ class Scaffoldt extends StatelessWidget {
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("For more info click the floating action button", style: TextStyle(
-                            color: Colors.indigo,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18),),
+                        child: Center(
+                          child: Text("For more info click the floating action button", style: TextStyle(
+                              color: Colors.indigo,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18),),
+                        ),
                       ),
-                    )
+                    ),
+                    SizedBox(height: 50,),
+                    Container(
+                      width: double.infinity,
+                      height: 50,
+                      color: Colors.white,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          InkWell(
+                            onTap: ()
+                            {
+                              Navigator.pushReplacement(context, PageTransition(
+                                type: PageTransitionType.rightToLeft,
+                                child:    Containert(),
+                              ),
+                              );
+                            },
+                            child: Container(
+                              child: Center(
+                                child: Text('Next',style: TextStyle(
+                                    fontSize: 35,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
 

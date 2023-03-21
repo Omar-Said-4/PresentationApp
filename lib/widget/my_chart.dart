@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:presentationapp/controller/HomeController.dart';
+import 'package:flutterbook/controller/HomeController.dart';
 
 import '../model/five_days_data.dart';
 

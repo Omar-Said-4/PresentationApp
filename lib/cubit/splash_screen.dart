@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:presentationapp/Start.dart';
+import 'package:flutterbook/Start.dart';
 
 class splash_screen extends StatefulWidget {
   const splash_screen({Key? key}) : super(key: key);
